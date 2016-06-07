@@ -80,8 +80,6 @@
 
   /* padding for the Module-block */
 
-  /* Card-style Module */
-
   /* Separator border for the Module-block */
 }
 
@@ -101,20 +99,7 @@
 }
 
 /**
- * Modifier: Module--card
- * Creates a Card-like Module, useful for Cards/Modals/Dialogs.
- */
-
-.Module--card {
-  background-clip: padding-box;
-  background-color: #fff;
-  border: 1px solid #ccc;
-  border-radius: 2px;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
-}
-
-/**
- * Modifier: Module--withGutter[Small|Large]
+ * Modifier: Module--withGutter[Sm|Lg] where Sm = small, Lg = large
  * Adds vertical spacing between Module-block
  */
 
@@ -122,16 +107,16 @@
   margin-top: 1rem;
 }
 
-.Module--withGutterSmall > .Module-block + .Module-block {
+.Module--withGutterSm > .Module-block + .Module-block {
   margin-top: 0.5rem;
 }
 
-.Module--withGutterLarge > .Module-block + .Module-block {
+.Module--withGutterLg > .Module-block + .Module-block {
   margin-top: 3rem;
 }
 
 /**
- * Modifier: Module--withPadding[Small|Large]
+ * Modifier: Module--withPadding[Sm|Lg] where Sm = small, Lg = large
  * Adds inner spacing to each Module-block
  */
 
@@ -139,11 +124,11 @@
   padding: 1rem;
 }
 
-.Module--withPaddingSmall > .Module-block {
+.Module--withPaddingSm > .Module-block {
   padding: 0.5rem;
 }
 
-.Module--withPaddingLarge > .Module-block {
+.Module--withPaddingLg > .Module-block {
   padding: 3rem;
 }
 
